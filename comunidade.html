@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , incial-scale="1.0" />
+    <link rel="stylesheet" href="Styles/Styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <title>Comunidade</title>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <img src="img/logo-plataforma.png" alt="Logo" class="cabecalho__logo" />
+        <input
+          type="text"
+          placeholder="Busque por algo"
+          class="cabecalho__input"
+        />
+        <div class="cabecalho_perfil">
+          <img
+            src="img/Photo.png"
+            alt="Foto perfil"
+            class="cabecalho__perfil-fotoPerfil"
+          />
+          <p class="cabecalho__perfil-nome">Danholys</p>
+        </div>
+      </div>
+    </header>
+    <!--MENU-->
+    <div class="container_geral-comunidade">
+      <section class="menu">
+        <h1 class="menu_menu">M e n u</h1>
+        <div class="menu__item">
+          <img src="img/editorunselect.svg" alt="" />
+          <a href="index.html" class="menu__item--link">Editor de código</a>
+        </div>
+        <div class="menu__item">
+          <img src="img/comunidadeselect.svg" alt="" />
+          <a href="comunidade.html" class="menu__item--link">Comunidade</a>
+        </div>
+      </section>
+      <!--INPUT E BOTÃO ANCORA-->
+      <div class="container_comunidade">
+        <section class="conteudo-comunidade">
+          <div class="conteudo__fundo-comunidade">
+            <div class="conteudo__inputs-comunidade">
+              <div class="conteudo__input-comunidade">
+                <textarea
+                  class="conteudo__input-input-comunidade"
+                  placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                
+                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                
+                const unfold = (f, seed) => {
+                  const go = (f, seed, acc) => {
+                    const res = f(seed)
+                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                  }
+                  return go(f, seed, [])
+                }"
+                ></textarea>
+              </div>
+            </div>
+            <h2 class="conteudo__titulo">Título do projeto</h2>
+            <p class="conteudo__conteudo">Essa é a descrição do meu projeto.</p>
+            <div class="conteudo__likeperfil">
+              <div class="conteudo__likeperfil-comentLike">
+                <img
+                  src="img/comment.svg"
+                  alt="comentario"
+                  class="conteudo__comentario"
+                />
+                <img src="img/like.svg" alt="like" class="conteudo__like" />
+              </div>
+              <img src="img/author.svg" alt="perfil" class="conteudo__perfil" />
+            </div>
+          </div>
+        </section>
+        <!--INPUT E BOTÃO ANCORA 2-->
+        <section class="conteudo-comunidade">
+          <div class="conteudo__fundo-comunidade">
+            <div class="conteudo__inputs-comunidade">
+              <div class="conteudo__input-comunidade">
+                <textarea
+                  class="conteudo__input-input-comunidade"
+                  placeholder="@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
+                
+                * {
+                  box-sizing: border-box;
+                }
+                
+                body {
+                  min-height: 100vh;
+                  background-color: #18181c;
+                  display: flex;
+                  align-items: center;
+                  "
+                ></textarea>
+              </div>
+            </div>
+            <h2 class="conteudo__titulo">Título do projeto</h2>
+            <p class="conteudo__conteudo">Essa é a descrição do meu projeto.</p>
+            <div class="conteudo__likeperfil">
+              <div class="conteudo__likeperfil-comentLike">
+                <img
+                  src="img/comment.svg"
+                  alt="comentario"
+                  class="conteudo__comentario"
+                />
+                <img src="img/like.svg" alt="like" class="conteudo__like" />
+              </div>
+              <img src="img/author.svg" alt="perfil" class="conteudo__perfil" />
+            </div>
+          </div>
+        </section>
+        <!--INPUT E BOTÃO ANCORA 3-->
+        <section class="conteudo-comunidade">
+          <div class="conteudo__fundo-comunidade">
+            <div class="conteudo__inputs-comunidade">
+              <div class="conteudo__input-comunidade">
+                <textarea
+                  class="conteudo__input-input-comunidade"
+                  placeholder="let textureOldGoldURL = 'https://assets.codepen.io/911157/matcapCop.jpg';
+                  let modelURL = 'https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb';
+                  
+                  // LANDSCAPE / PORTRAIT
+                  
+                  let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                  let windowRatio = window.innerWidth / window.innerHeight;
+                  let isLandscape = (windowRatio > 1) ? true : false;
+                  "
+                ></textarea>
+              </div>
+            </div>
+            <h2 class="conteudo__titulo">Título do projeto</h2>
+            <p class="conteudo__conteudo">Essa é a descrição do meu projeto.</p>
+            <div class="conteudo__likeperfil">
+              <div class="conteudo__likeperfil-comentLike">
+                <img
+                  src="img/comment.svg"
+                  alt="comentario"
+                  class="conteudo__comentario"
+                />
+                <img src="img/like.svg" alt="like" class="conteudo__like" />
+              </div>
+              <img src="img/author.svg" alt="perfil" class="conteudo__perfil" />
+            </div>
+          </div>
+        </section>
+        <!--INPUT E BOTÃO ANCORA 4-->
+        <section class="conteudo-comunidade">
+          <div class="conteudo__fundo-comunidade">
+            <div class="conteudo__inputs-comunidade">
+              <div class="conteudo__input-comunidade">
+                <textarea
+                  class="conteudo__input-input-comunidade"
+                  placeholder="let textureOldGoldURL = 'https://assets.codepen.io/911157/matcapCop.jpg';
+                  let modelURL = 'https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb';
+                  
+                  // LANDSCAPE / PORTRAIT
+                  
+                  let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                  let windowRatio = window.innerWidth / window.innerHeight;
+                  let isLandscape = (windowRatio > 1) ? true : false;
+                  "
+                ></textarea>
+              </div>
+            </div>
+            <h2 class="conteudo__titulo">Título do projeto</h2>
+            <p class="conteudo__conteudo">Essa é a descrição do meu projeto.</p>
+            <div class="conteudo__likeperfil">
+              <div class="conteudo__likeperfil-comentLike">
+                <img
+                  src="img/comment.svg"
+                  alt="comentario"
+                  class="conteudo__comentario"
+                />
+                <img src="img/like.svg" alt="like" class="conteudo__like" />
+              </div>
+              <img src="img/author.svg" alt="perfil" class="conteudo__perfil" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

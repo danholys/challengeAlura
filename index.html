@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , incial-scale="1.0" />
+    <link rel="stylesheet" href="Styles/Styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <title>Editor de código</title>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <img src="img/logo-plataforma.png" alt="Logo" class="cabecalho__logo" />
+        <input
+          type="text"
+          placeholder="Busque por algo"
+          class="cabecalho__input"
+        />
+        <div class="cabecalho_perfil">
+          <img
+            src="img/Photo.png"
+            alt="Foto perfil"
+            class="cabecalho__perfil-fotoPerfil"
+          />
+          <p class="cabecalho__perfil-nome">Danholys</p>
+          <img
+            src="img/Menu hamburguer.svg"
+            alt="menu"
+            class="cabecalho__menuhambuguer"
+          />
+        </div>
+      </div>
+    </header>
+    <!--MENU-->
+    <div class="container_geral">
+      <section class="menu">
+        <h1 class="menu_menu">M e n u</h1>
+        <div class="menu__item">
+          <img src="img/editorcodigo.svg" alt="" />
+          <a href="#" class="menu__item--link">Editor de código</a>
+        </div>
+        <div class="menu__item">
+          <img src="img/comunidade.svg" alt="" />
+          <a href="comunidade.html" class="menu__item--link">Comunidade</a>
+        </div>
+      </section>
+      <!--INPUT E BOTÃO ANCORA-->
+      <section class="conteudo">
+        <div class="conteudo__inputs">
+          <div class="conteudo__input">
+            <textarea
+              class="conteudo__input-input"
+              placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                
+                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                
+                const unfold = (f, seed) => {
+                    const go = (f, seed, acc) => {
+                        const res = f(seed)
+                        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                    }
+                    return go(f, seed, [])
+                }"
+            ></textarea>
+          </div>
+          <div class="conteudo__botao">
+            <button class="conteudo__botao-botao">
+              Visualizar com o highlight
+            </button>
+            <!-- <a href="#" class="conteudo__ancora-ancora"
+                >Visualizar com o highlight</a
+                > -->
+          </div>
+        </div>
+      </section>
+      <section class="menu__direito">
+        <div class="menu__direito-projeto">
+          <h1 class="menu__direito-titulo">S e u &nbsp;&nbsp;p r o j e t o</h1>
+          <input
+            type="text"
+            placeholder="Nome do seu projeto"
+            class="menu__direito-seuprojeto"
+          />
+          <textarea
+            placeholder="Descrição do seu projeto"
+            class="menu__direito-descricao"
+          ></textarea>
+        </div>
+        <h1 class="menu__direito-titulo">P e r s o n a l i z a ç ã o</h1>
+        <select class="menu__direito-seletor">
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="C#">C#</option>
+        </select>
+        <div class="menu__direito-color">
+          <input
+            type="color"
+            value="#6bd1ff"
+            class="menu__direito-seletorCor"
+          />
+        </div>
+        <button class="menu__direito-botao">Salvar Projeto</button>
+      </section>
+    </div>
+  </body>
+</html>

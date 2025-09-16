@@ -1,0 +1,102 @@
+.container_geral-comunidade {
+  display: flex;
+  padding: 32px;
+}
+
+.menu {
+  padding-top: 40px;
+}
+
+.menu_menu {
+  color: var(--branco);
+  font-weight: 400;
+  font-family: var(fontInter);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.menu__item--link {
+  text-decoration: none;
+  color: var(--branco);
+  font-weight: 400;
+  padding-left: 1em;
+}
+
+.conteudo-comunidade {
+  padding-top: 40px;
+  /* padding-left: 123px; */
+}
+.conteudo__fundo-comunidade {
+  width: 520px;
+  height: 464px;
+  margin-left: 123px;
+  background: #00000029;
+  border-radius: 8px;
+}
+
+.conteudo__input-input-comunidade {
+  width: 520px;
+}
+
+.conteudo__input-comunidade {
+  background: var(--azul-bb);
+  width: 520px;
+  height: 288px;
+  border-radius: 8px;
+}
+
+.conteudo__input-input-comunidade {
+  box-sizing: border-box;
+  width: 472px;
+  height: 240px;
+  margin-top: 24px;
+  margin-left: 24px;
+  border-radius: 8px;
+  color: var(--branco);
+  background: url(/img/mac_buttons.svg) no-repeat 16px 16px;
+  padding-top: 40px;
+  /* padding-left: 16px; */
+  background-color: var(--preto);
+  overflow: hidden;
+  resize: none;
+}
+
+.conteudo__input-input-comunidade::placeholder {
+  padding-left: 12px;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--branco);
+  font-family: var(--fontMono);
+  line-height: 12px;
+}
+
+.conteudo__titulo {
+  font-size: 21px;
+  font-weight: 500;
+  padding-left: 24px;
+  font-family: var(--fontInter);
+}
+
+.conteudo__conteudo {
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 24px;
+  font-family: var(--fontInter);
+}
+
+.conteudo__likeperfil {
+  display: flex;
+  padding-left: 24px;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.conteudo__perfil {
+  padding-right: 24px;
+}

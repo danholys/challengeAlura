@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabecalho__logo {
+  width: 145px;
+  margin-top: 1em;
+}
+
+.cabecalho__input {
+  width: 752px;
+  height: 40px;
+  border-radius: 8px;
+  border-color: var(--azul-input);
+  background-color: var(--azul-input);
+  margin-top: 1em;
+}
+
+.cabecalho__input::placeholder {
+  color: var(--cinza-claro);
+  padding-left: 1em;
+}
+
+.cabecalho_perfil {
+  display: flex;
+  align-items: center;
+  padding-right: 1em;
+  margin-top: 1em;
+}
+
+.cabecalho__perfil-fotoPerfil {
+  width: 32px;
+  height: 32px;
+  padding-right: 1em;
+}
+
+.cabecalho__perfil-nome {
+  font-family: var(--fontInter);
+  align-items: center;
+  color: var(--branco);
+}
+
+.cabecalho__menuhambuguer {
+  display: none;
+}
+
+.cabecalho__perfil-fotoPerfil,
+.cabecalho__perfil-nome {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    align-items: center;
+  }
+  .cabecalho__input {
+    width: 100%;
+  }
+
+  .cabecalho__logo {
+  }
+
+  .cabecalho__perfil-fotoPerfil,
+  .cabecalho__perfil-nome {
+    display: none;
+  }
+
+  .cabecalho__menuhambuguer {
+    display: block;
+  }
+}

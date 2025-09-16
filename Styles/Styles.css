@@ -1,0 +1,24 @@
+@import url(header.css);
+@import url(menu.css);
+@import url(menu_comunidade.css);
+
+:root {
+  --fontInter: "Inter", sans-serif;
+  --fontMono: "Roboto Mono", monospace;
+  --cor-fundo: #051d3b;
+  --branco: #ffffff;
+  --azul-claro: #5081fb;
+  --cinza: #888181;
+  --cinza-claro: #ffffff;
+  --azul-bb: #6bd1ff;
+  --preto: #000000;
+  --azul-ancora: #5081fb;
+  --azul-input: #2d415b;
+}
+
+body {
+  font-family: var(--fontInter);
+  background: var(--cor-fundo);
+  color: var(--branco);
+  font-weight: 400;
+}
