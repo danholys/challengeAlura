@@ -1,108 +1,96 @@
-.container_geral-comunidade {
-  display: flex;
-  padding: 32px;
-}
-
-.menu {
-  padding-top: 40px;
-}
-
-.menu_menu {
-  color: var(--branco);
-  font-weight: 400;
-  font-family: var(fontInter);
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.menu__item {
-  display: flex;
-  align-items: center;
-  padding-top: 16px;
-}
-
-.menu__item--link {
-  text-decoration: none;
-  color: var(--branco);
-  font-weight: 400;
-  padding-left: 1em;
-}
-
 .container_comunidade {
   display: flex;
+  gap: 24px;
   flex-wrap: wrap;
-  padding-left: 90px;
+  width: 100%;
 }
 
 .conteudo-comunidade {
-  padding-top: 40px;
-}
-.conteudo__fundo-comunidade {
-  width: 520px;
-  height: 464px;
-  margin-left: 24px;
-  /* margin-top: 40px; */
-  background: #00000029;
-  border-radius: 8px;
+  /* width: 100%; */
+  /* max-width: 500px; */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 320px;
 }
 
-.conteudo__input-input-comunidade {
-  width: 520px;
+.conteudo__fundo-comunidade {
+  background-color: #00000029;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.conteudo__inputs-comunidade {
+  background: var(--azul-bb);
+  padding: 24px;
+  border-radius: 8px;
 }
 
 .conteudo__input-comunidade {
-  background: #9aff6b;
-  width: 520px;
-  height: 288px;
-  border-radius: 8px;
-}
-
-.conteudo__input-input-comunidade {
-  box-sizing: border-box;
-  width: 472px;
-  height: 240px;
-  margin-top: 24px;
-  margin-left: 24px;
-  border-radius: 8px;
-  color: var(--branco);
-  background: url(/img/mac_buttons.svg) no-repeat 16px 16px;
-  padding-top: 40px;
-  /* padding-left: 16px; */
+  padding: 24px;
   background-color: var(--preto);
-  overflow: hidden;
-  resize: none;
+  width: 100%;
+  border-radius: 8px;
 }
 
-.conteudo__input-input-comunidade::placeholder {
-  padding-left: 12px;
-  font-size: 11px;
-  font-weight: 400;
+.conteudo__input-input--comunidade {
+  border-radius: 8px;
   color: var(--branco);
-  font-family: var(--fontMono);
-  line-height: 12px;
+  /* background: url(/img/mac_buttons.svg) no-repeat 16px 16px; */
+  background-color: var(--preto);
+  font-size: 11px;
+}
+
+.conteudo__bolinha {
+  display: flex;
+  gap: 8px;
+}
+
+.conteudo__bolinha-v {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #ff5f56;
+}
+
+.conteudo__bolinha-a {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #ffbd2e;
+}
+
+.conteudo__bolinha-verde {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #27c93f;
 }
 
 .conteudo__titulo {
-  font-size: 21px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 24px;
   padding-left: 24px;
-  font-family: var(--fontInter);
 }
 
 .conteudo__conteudo {
   font-size: 16px;
-  font-weight: 300;
-  padding-left: 24px;
   font-family: var(--fontInter);
+  font-weight: 200;
+  padding-left: 24px;
+  margin-top: 8px;
 }
 
 .conteudo__likeperfil {
   display: flex;
-  padding-left: 24px;
   justify-content: space-between;
-  padding-top: 10px;
+  padding: 24px;
 }
 
-.conteudo__perfil {
-  padding-right: 24px;
+.conteudo__likeperfil-comentLike {
+  display: flex;
 }
