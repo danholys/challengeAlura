@@ -1,6 +1,6 @@
 @import url(header.css);
 @import url(menu.css);
-@import url(menu_comunidade.css);
+@import url(comunidade.css);
 @import url(conteudo.css);
 @import url(menu_direito.css);
 
@@ -23,10 +23,10 @@ body {
   background: var(--cor-fundo);
   color: var(--branco);
   font-weight: 400;
-  padding: 32px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  padding: 12px;
   margin: 0 auto;
-  max-width: 1440px;
+  gap: 24px;
+  /* max-width: 1440px; */
 }

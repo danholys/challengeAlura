@@ -19,19 +19,33 @@
   <body>
     <header class="cabecalho">
       <div class="container">
-        <img src="img/logo-plataforma.png" alt="Logo" class="cabecalho__logo" />
+        <div class="cabecalho__img">
+          <img src="img/Logo (1).svg" alt="Logo" class="cabecalho__logo" />
+        </div>
         <input
           type="text"
           placeholder="Busque por algo"
           class="cabecalho__input"
         />
-        <div class="cabecalho_perfil">
-          <img
-            src="img/Photo.png"
-            alt="Foto perfil"
-            class="cabecalho__perfil-fotoPerfil"
-          />
-          <p class="cabecalho__perfil-nome">Danholys</p>
+        <div class="cabecalho__perfilnome">
+          <div class="cabecalho_perfil">
+            <img
+              src="img/Photo.png"
+              alt="Foto perfil"
+              class="cabecalho__perfil-fotoPerfil"
+            />
+            <p class="cabecalho__perfil-nome">Danholys</p>
+          </div>
+          <div class="cabecalho__lupamenu">
+            <img src="img/lupa.svg" alt="lupinha" class="cabecalho__imglupa" />
+            <a href="index.html">
+              <img
+                src="img/Menu hamburguer.svg"
+                alt="menu"
+                class="cabecalho__menuhamburguer"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -53,7 +67,7 @@
         <div class="container_comunidade">
           <section class="conteudo-comunidade">
             <div class="conteudo__fundo-comunidade">
-              <div class="conteudo__inputs-comunidade">
+              <div id="verde" class="conteudo__inputs-comunidade">
                 <div class="conteudo__input-comunidade">
                   <div class="conteudo__bolinha">
                     <i class="conteudo__bolinha-v"></i>
@@ -102,7 +116,7 @@ const unfold = (f, seed) => {
           <!--INPUT E BOTÃO ANCORA 2-->
           <section class="conteudo-comunidade">
             <div class="conteudo__fundo-comunidade">
-              <div class="conteudo__inputs-comunidade">
+              <div id="azul" class="conteudo__inputs-comunidade">
                 <div class="conteudo__input-comunidade">
                   <div class="conteudo__bolinha">
                     <i class="conteudo__bolinha-v"></i>
@@ -151,7 +165,7 @@ const unfold = (f, seed) => {
           <!--INPUT E BOTÃO ANCORA 3-->
           <section class="conteudo-comunidade">
             <div class="conteudo__fundo-comunidade">
-              <div class="conteudo__inputs-comunidade">
+              <div id="vermelho" class="conteudo__inputs-comunidade">
                 <div class="conteudo__input-comunidade">
                   <div class="conteudo__bolinha">
                     <i class="conteudo__bolinha-v"></i>
@@ -200,7 +214,7 @@ const unfold = (f, seed) => {
           <!--INPUT E BOTÃO ANCORA 3-->
           <section class="conteudo-comunidade">
             <div class="conteudo__fundo-comunidade">
-              <div class="conteudo__inputs-comunidade">
+              <div id="amarelo" class="conteudo__inputs-comunidade">
                 <div class="conteudo__input-comunidade">
                   <div class="conteudo__bolinha">
                     <i class="conteudo__bolinha-v"></i>

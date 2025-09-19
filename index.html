@@ -19,11 +19,7 @@
     <header class="cabecalho">
       <div class="container">
         <div class="cabecalho__img">
-          <img
-            src="img/logo-plataforma.png"
-            alt="Logo"
-            class="cabecalho__logo"
-          />
+          <img src="img/Logo (1).svg" alt="Logo" class="cabecalho__logo" />
         </div>
         <input
           type="text"
@@ -38,11 +34,16 @@
               class="cabecalho__perfil-fotoPerfil"
             />
             <p class="cabecalho__perfil-nome">Danholys</p>
-            <img
-              src="img/Menu hamburguer.svg"
-              alt="menu"
-              class="cabecalho__menuhambuguer"
-            />
+          </div>
+          <div class="cabecalho__lupamenu">
+            <img src="img/lupa.svg" alt="lupinha" class="cabecalho__imglupa" />
+            <a href="comunidade.html">
+              <img
+                src="img/Menu hamburguer.svg"
+                alt="menu"
+                class="cabecalho__menuhamburguer"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -71,19 +72,25 @@
             </div>
             <pre class="conteudo__input-input">
               <code>
-const pluckDeep = (key) => (obj) =>
-  key.split(".").reduce((accum, key) => accum[key], obj);
-const compose =
-  (...fns) =>
-  (res) =>
-    fns.reduce((accum, next) => next(accum), res);
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed);
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc;
-  };
-  return go(f, seed, []);
-};</code>
+const pluckDeep = key => obj =>
+  key.split('.').reduce((accum,
+key) => accum[key], obj)
+
+const compose = (...fns) => res =>
+  fns.reduce((accum,
+next) => next(accum), res)
+
+const unfold = (f, seed) =>
+{
+  const go = (f, seed, acc) 
+=> {
+    const res = f(seed)
+    return res ? go(f, 
+res[1], acc.concat([res[0]]))
+: acc
+ }
+  return go(f, seed, [])
+}</code>
             </pre>
           </div>
         </div>
