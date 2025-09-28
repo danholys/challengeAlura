@@ -102,16 +102,20 @@
   }
 }
 
-@media screen and (max-width: 1728px) {
+@media screen and (min-width: 1728px) {
   .menu__direito {
     display: flex;
     width: 100%;
+    flex-direction: column;
   }
 
   .menu__seletores {
+    display: flex;
     width: 100%;
+    flex-direction: column;
   }
-  .menu__direito-seletor {
+  .menu__direito-seletor,
+  .menu__direito-color {
     width: 100%;
   }
 }
