@@ -1,62 +1,149 @@
-<html lang="pt-BR">
-  <!DOCTYPE html>
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <title>Jogo da velha</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , incial-scale="1.0" />
+    <link rel="stylesheet" href="Styles/Styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <title>Editor de código</title>
   <body>
     <header class="cabecalho">
-      <div class="cabecalho__xo">
-        <img src="img/x.png" alt="x" class="cabecalho__img" />
-        <img src="img/circulo.png" alt="circulo" class="cabecalho__img" />
-      </div>
-
-      <div class="cabecalho__botaoTurn">
-        <img
-          src="img/circulo.png"
-          alt="vez"
-          class="cabecalho__botaoTurn--imgTurn"
+      <div class="container">
+        <div class="cabecalho__img">
+          <img src="img/Logo (1).svg" alt="Logo" class="cabecalho__logo" />
+        </div>
+        <input
+          type="text"
+          placeholder="Busque por algo"
+          class="cabecalho__input"
         />
-        Turn
+        <div class="cabecalho__perfilnome">
+          <div class="cabecalho_perfil">
+            <img
+              src="img/Photo.png"
+              alt="Foto perfil"
+              class="cabecalho__perfil-fotoPerfil"
+            />
+            <p class="cabecalho__perfil-nome">Danholys</p>
+          </div>
+          <div class="cabecalho__lupamenu">
+            <img src="img/lupa.svg" alt="lupinha" class="cabecalho__imglupa" />
+            <a href="comunidade.html">
+              <img
+                src="img/Menu hamburguer.svg"
+                alt="menu"
+                class="cabecalho__menuhamburguer"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-
-      <button class="cabecalho__botaoreiniciar">
-        <img
-          src="img/desfazer-seta.png"
-          alt="reinicio"
-          class="cabecalho__botaoreiniciar--img"
-        />
-      </button>
     </header>
-    <section class="casas">
-      <button class="casas__botao" id="1"></button>
-      <button class="casas__botao" id="2"></button>
-      <button class="casas__botao" id="3"></button>
-      <button class="casas__botao" id="4"></button>
-      <button class="casas__botao" id="5"></button>
-      <button class="casas__botao" id="6"></button>
-      <button class="casas__botao" id="7"></button>
-      <button class="casas__botao" id="8"></button>
-      <button class="casas__botao" id="9"></button>
-    </section>
+    <!--MENU-->
+    <main class="container_geral">
+      <section class="menu">
+        <h1 class="menu_menu">M e n u</h1>
+        <div class="menu__item">
+          <img src="img/editorcodigo.svg" alt="" />
+          <a href="#" class="menu__item--link">Editor de código</a>
+        </div>
+        <div class="menu__item">
+          <img src="img/comunidade.svg" alt="" />
+          <a href="comunidade.html" class="menu__item--link">Comunidade</a>
+        </div>
+      </section>
+      <!--INPUT E BOTÃO ANCORA-->
+      <section class="conteudo">
+        <div class="conteudo__inputs">
+          <div class="conteudo__input">
+            <div class="conteudo__bolinha">
+              <i class="conteudo__bolinha-v"></i>
+              <i class="conteudo__bolinha-a"></i>
+              <i class="conteudo__bolinha-verde"></i>
+            </div>
+            <pre class="conteudo__input-input">
+              <code>
+const pluckDeep = key => obj =>
+  key.split('.').reduce((accum,
+key) => accum[key], obj)
 
-    <section class="placar">
-      <span class="placar__botao" id="botao-1">
-        <h1 class="placar__botao--top">X (Você)</h1>
-        <h1 class="placar__botao--valor">12</h1>
-      </span>
-      <span class="placar__botao" id="botao-2">
-        <h1 class="placar__botao--top">Partidas</h1>
-        <h1 class="placar__botao--valor">32</h1>
-      </span>
-      <span class="placar__botao" id="botao-3">
-        <h1 class="placar__botao--top">o (Máquina)</h1>
-        <h1 class="placar__botao--valor">11</h1>
-      </span>
-    </section>
-    <footer class="rodape">Desenvolvido por Danholys</footer>
+const compose = (...fns) => res =>
+  fns.reduce((accum,
+next) => next(accum), res)
+
+const unfold = (f, seed) =>
+{
+  const go = (f, seed, acc) 
+=> {
+    const res = f(seed)
+    return res ? go(f, 
+res[1], acc.concat([res[0]]))
+: acc
+ }
+  return go(f, seed, [])
+}</code>
+            </pre>
+          </div>
+        </div>
+        <div class="conteudo__botao">
+          <button class="conteudo__botao-botao">
+            Visualizar com o highlight
+          </button>
+          <!-- <a href="#" class="conteudo__ancora-ancora"
+              >Visualizar com o highlight</a
+              > -->
+        </div>
+      </section>
+      <section class="menu__direito">
+        <form class="menu__formulario">
+          <fieldset class="menu__formulario-grupo">
+            <legend class="menu__direito-titulo">
+              S e u &nbsp;&nbsp;p r o j e t o
+            </legend>
+            <div class="menu__direito-projeto">
+              <input
+                type="text"
+                placeholder="Nome do seu projeto"
+                class="menu__direito-seuprojeto"
+              />
+              <textarea
+                placeholder="Descrição do seu projeto"
+                class="menu__direito-descricao"
+              ></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="menu__formulario-grupo">
+            <legend class="menu__direito-titulo">
+              P e r s o n a l i z a ç ã o
+            </legend>
+            <div class="menu__seletores">
+              <select class="menu__direito-seletor">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+              </select>
+              <div class="menu__direito-color">
+                <input
+                  type="color"
+                  value="#6bd1ff"
+                  class="menu__direito-seletorCor"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <button class="menu__direito-botao">Salvar Projeto</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
